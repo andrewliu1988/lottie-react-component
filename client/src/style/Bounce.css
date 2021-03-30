@@ -1,0 +1,16 @@
+.square {
+    background-color: orangered;
+    height: 90px;
+    width: 90px;
+    border-radius: 1000px;
+    top: 0px;
+    position: absolute;
+    animation: bounceAnimation 1s infinite;
+}
+  
+@keyframes bounceAnimation {
+    50% {
+    float: right;
+    top: 100px;
+    }
+}
