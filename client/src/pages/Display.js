@@ -1,7 +1,7 @@
 import React from "react";
-import '../style/Template.css'
+import '../style/Display.css'
 
-import DropDown from '../components/Dropdown'
+import DropDownMenu from '../components/DropdownMenu'
 import Animation from '../components/Animation'
 
 import check from '../assets/animations/check.json'
@@ -25,7 +25,7 @@ const Display = () => {
     return (
 
         <div className="pageTemp">
-            <DropDown animation={animation} setSelected={setSelected}></DropDown>
+            <DropDownMenu animation={animation} setSelected={setSelected}></DropDownMenu>
             <div className="frame">
                 <Animation animation={animation[selected]}></Animation>
             </div>

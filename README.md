@@ -4,6 +4,10 @@
 
 ## Getting Started
 
-- Fork and Clone
-- cd into client
-- npm install
+- fork and clone
+- npm install within the client folder
+
+
+## Description
+
+Reusable Lottie-React component

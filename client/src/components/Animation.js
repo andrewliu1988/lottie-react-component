@@ -1,6 +1,5 @@
 import React from "react";
 import Lottie from 'react-lottie'
-import '../style/Lottie.css'
 
 const Animation = (props) => {
 
@@ -17,7 +16,7 @@ const Animation = (props) => {
     }
 
     return (
-        <div className="lottie" onClick={handleClick}>
+        <div onClick={handleClick}>
             <Lottie
                 options={defaultOptions}
                 height={200}

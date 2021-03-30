@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'
+import '../style/Display.css'
 
-const DropDown = (props) => {
+const DropDownMenu = (props) => {
 
     const handleChange = (event) => {
         event.preventDefault()
@@ -9,16 +10,16 @@ const DropDown = (props) => {
 
     return (
         <div>
-            <form>
-                <label>Lottie Files</label>
-                <select onChange={handleChange}>
+            <form className="dropdown">
+                <label>Select an Animation</label>
+                <select className="menu" onChange={handleChange}>
                     {props.animation.map((anim, index) => (
                         <option key={index} value={index}>{anim.name}</option>
                     ))}
                 </select>
             </form>
         </div>
-    );
+    )
 }
 
-export default DropDown;
+export default DropDownMenu
